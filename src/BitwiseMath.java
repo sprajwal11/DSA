@@ -10,6 +10,7 @@ public class BitwiseMath {
         System.out.println(getIthBit(10,3));
         System.out.println(setIthBit(10,2));
         System.out.println(clearIthBit(10,1));
+        System.out.println(updateIthBit(10,2,1));
 
     }
 
@@ -46,11 +47,16 @@ public class BitwiseMath {
     }
 
     static int updateIthBit(int n, int i, int newBit){
-        if (newBit==0){
-            return clearIthBit(n,i);
-        }
-        else
-            return setIthBit(n,i);
+//        if (newBit==0){
+//            return clearIthBit(n,i);
+//        }
+//        else
+//            return setIthBit(n,i);
+
+        //other approach
+        n=clearIthBit(n,i);
+        int bitMask=newBit<<i;
+        return n | bitMask;
     }
 
 

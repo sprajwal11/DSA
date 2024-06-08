@@ -4,14 +4,27 @@ import java.util.List;
 
 public class ArraysQuestions {
     public static void main(String[] args) {
-        int[] arr={-2,1,-3,4,-1,2,1,-5,4};
+       // int[] arr={-2,1,-3,4,-1,2,1,-5,4};
        // printPairOfArr(arr);
-        maxSubArrSumBF(arr); //need to fix for all neg integer
-        int[] height={4,2,0,6,3,2,5};
+       // maxSubArrSumBF(arr); //need to fix for all neg integer
+       // int[] height={4,2,0,6,3,2,5};
        // trappingRainwater(height); //going to solve by auxiliary arrays
 
-        int[] stockPrices={7,1,5,3,6,4};
-        buyAndSellStocks(stockPrices);
+       // int[] stockPrices={7,1,5,3,6,4};
+      //  buyAndSellStocks(stockPrices);
+
+        int[] arr= {2,5,1,3,4,7};
+        System.out.println(Arrays.toString(shuffle(arr,3)));
+    }
+
+    static int[] shuffle(int[] nums, int n) { //needs to fix
+        int x=0;
+        int y=n;
+        int[] ans=new int[2*y];
+        for (int i = 0; i < nums.length; i++) {
+            
+        }
+        return ans;
     }
 
     static void buyAndSellStocks(int[] arr){
